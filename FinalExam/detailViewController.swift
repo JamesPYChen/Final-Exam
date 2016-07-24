@@ -1,0 +1,50 @@
+//
+//  detailViewController.swift
+//  FinalExam
+//
+//  Created by jamespoyu on 2016/7/25.
+//  Copyright © 2016年 AlphaCamp. All rights reserved.
+//
+
+import UIKit
+import WebKit
+class detailViewController: UIViewController{
+    @IBOutlet weak var detailImageView: UIImageView!
+    
+    var detailBookList : Book?
+    
+    @IBOutlet weak var detailIntro: UILabel!
+    @IBOutlet weak var detailBookName: UILabel!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+    
+    var detailBookInfo: Book?
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+   
+    @IBAction func webAction(sender: AnyObject) {
+        let webView = WKWebView(frame:UIScreen.mainScreen().bounds)
+        self.view.addSubview(webView)
+        let url = NSURL(string: "\(detailBookList?.Website!)")
+        let request = NSURLRequest(URL: url!)
+        webView.loadRequest(request)
+    }
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}
