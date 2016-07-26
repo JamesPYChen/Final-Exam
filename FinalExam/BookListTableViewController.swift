@@ -77,6 +77,8 @@ class BookListTableViewController: UITableViewController {
                 let bookList = Book()
                 bookList.setValuesForKeysWithDictionary(dictionary)
                 self.bookLists.append(bookList)
+                
+                print("bookList \(bookList)")
                 self.tableViewList.reloadData()
                 
                 
@@ -137,7 +139,7 @@ class BookListTableViewController: UITableViewController {
             
             if let indexPath = tableViewList.indexPathForSelectedRow{
                 let destinationViewController = segue.destinationViewController as! detailViewController
-                destinationViewController.detailBookInfo = bookLists[indexPath.row]
+                destinationViewController.detailBookList = bookLists[indexPath.row]
                 
                 print(destinationViewController.detailBookInfo)
             }

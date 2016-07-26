@@ -32,6 +32,9 @@ class detailViewController: UIViewController{
         let webView = WKWebView(frame:UIScreen.mainScreen().bounds)
         self.view.addSubview(webView)
         let url = NSURL(string: "\(detailBookList?.Website!)")
+        
+        print(detailBookList?.Website!)
+        print("url : \(url)")
         let request = NSURLRequest(URL: url!)
         webView.loadRequest(request)
     }

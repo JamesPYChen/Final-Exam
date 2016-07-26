@@ -25,6 +25,12 @@ class AddBookcontroller: UIViewController {
         let refData = FIRDatabase.database().reference()
         let refPost = refData.child("BookLists").childByAutoId()
     refPost.setValue(["BookName": nameField.text!,"Address": addressField.text!,"PhoneNumber": phonenumberField.text!,"BriefIntroduction" : briefIntroductionField.text!,"Website": webSiteField.text!])
+        
+        nameField.text = ""
+        addressField.text = ""
+        phonenumberField.text = ""
+        webSiteField.text = ""
+        briefIntroductionField.text = ""
 
         
         

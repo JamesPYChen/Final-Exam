@@ -342,7 +342,25 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="2134" y="1128"/>
+            <point key="canvasLocation" x="2026" y="1780"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="L5R-Rh-zYP">
+            <objects>
+                <viewController id="Zof-Na-wvY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TPA-0G-K8e"/>
+                        <viewControllerLayoutGuide type="bottom" id="yaq-Fm-uyu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ggQ-Tm-0FU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DAU-5l-8Z4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2707" y="1780"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="oMl-qQ-SzL">
