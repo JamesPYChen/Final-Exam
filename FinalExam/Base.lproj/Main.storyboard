@@ -241,6 +241,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gtu-TM-nbl">
                                 <rect key="frame" x="92" y="388" width="416" height="30"/>
                                 <state key="normal" title="address"/>
+                                <connections>
+                                    <segue destination="Zof-Na-wvY" kind="show" identifier="mapSegue" id="TaV-ZG-dcS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -344,10 +347,10 @@
             </objects>
             <point key="canvasLocation" x="2026" y="1780"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="L5R-Rh-zYP">
             <objects>
-                <viewController id="Zof-Na-wvY" sceneMemberID="viewController">
+                <viewController id="Zof-Na-wvY" customClass="MapViewController" customModule="FinalExam" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TPA-0G-K8e"/>
                         <viewControllerLayoutGuide type="bottom" id="yaq-Fm-uyu"/>
@@ -355,8 +358,22 @@
                     <view key="view" contentMode="scaleToFill" id="ggQ-Tm-0FU">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zLm-2S-iVN">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yaq-Fm-uyu" firstAttribute="top" secondItem="zLm-2S-iVN" secondAttribute="bottom" id="HfU-Gk-EUC"/>
+                            <constraint firstItem="zLm-2S-iVN" firstAttribute="leading" secondItem="ggQ-Tm-0FU" secondAttribute="leading" id="W22-1Q-cEK"/>
+                            <constraint firstAttribute="trailing" secondItem="zLm-2S-iVN" secondAttribute="trailing" id="Z8O-3K-Q1X"/>
+                            <constraint firstItem="zLm-2S-iVN" firstAttribute="top" secondItem="ggQ-Tm-0FU" secondAttribute="top" id="bqf-rt-y1B"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bookMap" destination="zLm-2S-iVN" id="LyN-hK-NPF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DAU-5l-8Z4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

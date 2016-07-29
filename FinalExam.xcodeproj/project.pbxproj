@@ -18,6 +18,7 @@
 		53CD17481D44977C00617866 /* BookListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CD17471D44977C00617866 /* BookListTableViewController.swift */; };
 		53CD174A1D44EEA100617866 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CD17491D44EEA100617866 /* Book.swift */; };
 		53CD174C1D45586C00617866 /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CD174B1D45586C00617866 /* detailViewController.swift */; };
+		53CD17521D49E04400617866 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CD17511D49E04400617866 /* MapViewController.swift */; };
 		7D2F0A0405675D5335175BF3 /* Pods_FinalExam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9C30F397BF023F702C5DEC /* Pods_FinalExam.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		53CD17471D44977C00617866 /* BookListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookListTableViewController.swift; sourceTree = "<group>"; };
 		53CD17491D44EEA100617866 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		53CD174B1D45586C00617866 /* detailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
+		53CD17511D49E04400617866 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		77531149E910A71DCA198C99 /* Pods-FinalExam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalExam.release.xcconfig"; path = "Pods/Target Support Files/Pods-FinalExam/Pods-FinalExam.release.xcconfig"; sourceTree = "<group>"; };
 		AD9C30F397BF023F702C5DEC /* Pods_FinalExam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinalExam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC601340FE1A995608A6527D /* Pods-FinalExam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalExam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinalExam/Pods-FinalExam.debug.xcconfig"; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				53CD17471D44977C00617866 /* BookListTableViewController.swift */,
 				53CD17491D44EEA100617866 /* Book.swift */,
 				53CD174B1D45586C00617866 /* detailViewController.swift */,
+				53CD17511D49E04400617866 /* MapViewController.swift */,
 			);
 			path = FinalExam;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				53CD174A1D44EEA100617866 /* Book.swift in Sources */,
 				53CD172A1D41F17800617866 /* AppDelegate.swift in Sources */,
 				53CD174C1D45586C00617866 /* detailViewController.swift in Sources */,
+				53CD17521D49E04400617866 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
